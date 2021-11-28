@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #result {
+            text-align: center;
+            columns: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bảng Cửu Chương</h1>
+    <div id="result"></div>
+
+    <script>
+        let str = '';
+        for (let i = 2; i <= 9; i++) {
+            for (let k = 1; k <= 10; k++) {
+                str += (`${i} x ${k} = ${i * k}<br>`);
+            }
+            str += '<br>'
+        }
+        document.getElementById("result").innerHTML = str;
+    </script>
+</body>
+</html>

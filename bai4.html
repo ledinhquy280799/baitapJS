@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number">
+    <button type="submit" onclick="printPrimeNumber()">Print Prime Number</button>
+    <div id="result"></div>
+
+    <script>
+        function isPrimeNumber(number) {
+            if (number < 2) {
+                return false;
+            } else {
+                let check = true;
+                for (let i = 2; i <= Math.sqrt(number); i++) {
+                    if (number % i === 0) {
+                        check = false;
+                        break;
+                    }
+                }
+                return check;
+            }
+        }
+
+        function printPrimeNumber() {
+            let value = document.getElementById("number").value;
+            let str = "";
+
+            for (i = 0; i <= value; i++) {
+                if (isPrimeNumber(i)) {
+                    str += (i + " ");
+                }
+            }
+
+            document.getElementById("result").innerHTML = str;
+        }
+    </script>
+</body>
+</html>

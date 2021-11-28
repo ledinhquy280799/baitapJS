@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number">
+    <button type="submit" onclick="isExistOddNumber()">Is Exist Odd Number?</button>
+    <div id="result"></div>
+
+    <script>
+        function isExistOddNumber() {
+            let value = document.getElementById("number").value;
+            document.getElementById("result").innerHTML = "All Odd Number"
+            while (value > 0) {
+                i = value % 10;
+                if (i % 2 == 0) {
+                    console.log(1212312312);
+                    document.getElementById("result").innerHTML = "Not All Odd Number"
+                    break;
+                }
+                value = Math.floor(value / 10);
+            }
+        }
+    </script>
+</body>
+</html>
