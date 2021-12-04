@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            text-align: center;
+        }
+
+        .article {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .article img {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <select id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="brown">Brown</option>
+        <option value="lavender">Lavender</option>
+    </select>
+    <h1 class="title">Newspaper</h1>
+    <div class="article">
+        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non asperiores, quos expedita distinctio est exercitationem porro culpa harum voluptate voluptates accusantium quaerat nesciunt ex nulla autem qui sed? Nisi, adipisci.</p>
+    </div>
+
+    <script>
+        var selectColor = document.getElementById("color")
+        selectColor.addEventListener("change", () => {
+            switch (selectColor.value) {
+                case "red":
+                    document.body.style.background = "red"
+                    break;
+                case "blue":
+                document.body.style.background = "blue"
+                break;
+                case "brown":
+                document.body.style.background = "brown"
+                break;
+                case "lavender":
+                document.body.style.background = "lavender"
+                break;
+            }
+        })
+    </script>
+</body>
+</html>

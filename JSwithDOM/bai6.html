@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            text-align: center;
+        }
+
+        .article {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .article img {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="blue">Xanh</button>
+    <button id="red">Đỏ</button>
+    <h1 class="title">Newspaper</h1>
+    <div class="article">
+        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non asperiores, quos expedita distinctio est exercitationem porro culpa harum voluptate voluptates accusantium quaerat nesciunt ex nulla autem qui sed? Nisi, adipisci.</p>
+    </div>
+
+    <script>
+        var btnBlue = document.getElementById("blue")
+        var btnRed = document.getElementById("red")
+
+        btnBlue.addEventListener("click", () => {
+            document.body.style.background = "blue"
+        })
+
+        btnRed.addEventListener("click", () => {
+            document.body.style.background = "red"
+        })
+    </script>
+</body>
+</html>
